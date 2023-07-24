@@ -1,6 +1,8 @@
 # Calendar
 test task for getting the position of front-end developer
 
+[Try to demo](https://calendar.zaur-dev.ru/)
+
 ## Open project
 
 1. Download files.

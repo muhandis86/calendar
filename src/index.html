@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Events</title>
+</head>
+
+<body>
+
+    <div class="preloader" id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="container">
+
+        <div class="navigation mb-4">
+
+            <div class="navigation__step">
+                <div class="btn-group bg-primary-subtle me-2">
+                    <button id="prev" type="button" class="btn text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                    </button>
+                    <button id="next" type="button" class="btn text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <button id="today" type="button" class="btn bg-primary-subtle text-primary" style="border: none;"
+                    disabled>Today</button>
+            </div>
+
+            <div class="navigation__date"></div>
+
+            <div class="navigation__interval">
+                <div class="btn-group ">
+                    <button type="button" class="btn bg-primary-subtle text-primary ">Month</button>
+                    <button type="button" class="btn bg-primary-subtle text-primary active">Week</button>
+                    <button type="button" class="btn bg-primary-subtle text-primary">Day</button>
+                    <button type="button" class="btn bg-primary-subtle text-primary">List</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="calendar mb-4"></div>
+
+    </div>
+
+    <script>
+        const jsonData = {
+            "events": [
+                { "name": "Doctor Meeting", "date": "19/07/23", "time": "10:00", "ampm": "am", "duration": "60" },
+                { "name": "Job Interview", "date": "22/07/23", "time": "6:30", "ampm": "am", "duration": "90" },
+                { "name": "Friends Meeting", "date": "16/07/23", "time": "6:00", "ampm": "pm", "duration": "120" },
+                { "name": "Frontend MeetUp", "date": "24/07/23", "time": "8:00", "ampm": "am", "duration": "60" },
+                { "name": "Job Interview", "date": "24/07/23", "time": "9:00", "ampm": "am", "duration": "60" },
+                { "name": "Meeting X", "date": "24/07/23", "time": "10:00", "ampm": "am", "duration": "60" },
+                { "name": "Meeting Z", "date": "24/07/23", "time": "10:00", "ampm": "am", "duration": "60" },
+                { "name": "Doctor Meeting", "date": "25/07/23", "time": "8:00", "ampm": "am", "duration": "60" },
+                { "name": "Friends Meeting", "date": "30/07/23", "time": "7:00", "ampm": "am", "duration": "60" },
+                { "name": "Football match", "date": "09/08/23", "time": "10:30", "ampm": "am", "duration": "90" },
+                { "name": "Meeting X", "date": "06/08/23", "time": "2:30", "ampm": "am", "duration": "30" }
+            ]
+        }
+    </script>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/bundle.js"></script>
+
+</body>
+
+</html>

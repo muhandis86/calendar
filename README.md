@@ -1,7 +1,9 @@
 # Calendar
-test task for getting the position of front-end developer
+My first test task for getting the position of front-end developer
 
-[Try for demo](https://zaur-dev.ru/)
+[Try for demo](https://calendar.zaur-dev.ru/)
+
+[View test task](https://drive.google.com/file/d/1NnJ6meXQu2EcnV1hXzKi7izBsABk_DuT/view?usp=sharing))
 
 ## Open project
 
